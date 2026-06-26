@@ -1,0 +1,11 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Library") (type "KiCad") (uri "E:/KICAD/Library.pretty") (options "") (descr ""))
+	(lib (name "Library") (type "KiCad") (uri "E:/KICAD/Library.pretty") (options "") (descr ""))
+	(lib (name "Library") (type "KiCad") (uri "E:/KICAD/Library.pretty") (options "") (descr ""))
+	(lib (name "sombrillalib") (type "KiCad") (uri "E:/KICAD/sombrillalib.pretty") (options "") (descr ""))
+	(lib (name "Footprints_THT") (type "KiCad") (uri "E:/KICAD/sombrillalib/Footprints/Footprints_THT.pretty") (options "") (descr ""))
+	(lib (name "Library") (type "KiCad") (uri "E:/KICAD/sombrillalib/Symbols/Library.pretty") (options "") (descr ""))
+	(lib (name "sombrillalib") (type "KiCad") (uri "E:/KICAD/sombrillalib.pretty") (options "") (descr ""))
+	(lib (name "Sombrilla_Footprints_THT") (type "KiCad") (uri "E:/KICAD/sombrillalib/Footprints/Sombrilla_Footprints_THT.pretty") (options "") (descr ""))
+)
