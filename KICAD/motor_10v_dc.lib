@@ -1,0 +1,24 @@
+* Conexiones: 1 y 2 son las terminales del motor DC
+.SUBCKT MOTOR_DC_10V 1 2
+
+* --- PARTE ELÉCTRICA ---
+* R_armadura y L_armadura (Bobinado del rotor)
+R1 1 internal 1.5
+L1 internal 3 2mH
+
+* Fuente de voltaje dependiente (FCEI / Back-EMF)
+* En ngspice las fuentes dependientes no lineales usan la letra B y V=
+B_BACKEMF 3 2 V=V(w)*0.05
+
+* --- PARTE MECÁNICA (Conversión Electromecánica) ---
+* Fuente de corriente dependiente (Torque del motor)
+* En ngspice se usa I= para fuentes de corriente arbitrarias
+B_TORQUE 0 w I=I(B_BACKEMF)*0.05
+
+* Inercia del rotor (Simulada con un condensador: 10uF)
+C_INERCIA w 0 10uF
+
+* Fricción y Carga Mecánica (Simulada con una resistencia)
+R_CARGA w 0 100
+
+.ENDS MOTOR_DC_10V

@@ -1,0 +1,14 @@
+* Modelo SPICE de un LED (Azul/Blanco) con Vf = 2.7V a 20mA
+.MODEL led D (
++ IS=2.5e-22 
++ N=2.2 
++ RS=6.5 
++ EG=3.2 
++ XTI=3 
++ BV=5 
++ IBV=10u 
++ CJO=15p 
++ VJ=0.75 
++ M=0.333 
++ TT=4n
++ )

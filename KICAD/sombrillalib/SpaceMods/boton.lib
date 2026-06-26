@@ -1,0 +1,4 @@
+.SUBCKT MODELO_BOTON 1 2 3
+B1 1 3 I = V(1,3) / (uramp(4.5 - V(2)) * 1Meg + 0.001)
+R_STAB 2 0 1G
+.ENDS

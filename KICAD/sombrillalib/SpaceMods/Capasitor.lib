@@ -1,0 +1,10 @@
+* Modelo SPICE para Capacitor Electrolítico de Potencia (100mF)
+* Pines: 1 = Positivo (+), 2 = Negativo (-)
+* Basado en parámetros reales para filtrado de fuentes y motores
+
+.SUBCKT CAP_100mF 1 2
+C1 1 3 100m
+R_ESR 3 4 15m
+L_ESL 4 2 30n
+R_LEAK 1 2 10k
+.ENDS

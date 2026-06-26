@@ -1,0 +1,8 @@
+* Modelo RLC parásito para Capacitor Electrolítico 330uF
+* Pin 1: Positivo (+), Pin 2: Negativo (-)
+.SUBCKT CAP_330uF 1 2
+C1      1 3  330u
+R_ESR   3 4  15m
+L_ESL   4 2  30n
+R_LEAK  1 2  10k
+.ENDS

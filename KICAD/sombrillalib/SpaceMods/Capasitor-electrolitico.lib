@@ -1,0 +1,8 @@
+* Modelo SPICE para Capacitor Electrolítico 470uF 16V,
+* Pin 1: Positivo (+),
+* Pin 2: Negativo (-),
+.SUBCKT CAP_ELEC_470U_16V 1 2
+C1 1 3 470u
+R_ESR 3 2 0.14
+R_FUGA 1 2 50k
+.ENDS

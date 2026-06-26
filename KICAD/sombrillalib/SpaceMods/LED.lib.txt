@@ -1,0 +1,19 @@
+* Archivo de biblioteca SPICE para LED Rojo
+* Compatible con KiCad (ngspice) y LTspice
+* Mapeo de terminales: 1 = Ánodo, 2 = Cátodo
+
+.SUBCKT LED_ROJO 1 2
+D1 1 2 MODELO_LED_ROJO
+
+.MODEL MODELO_LED_ROJO D(
++ IS=1e-22 
++ RS=4 
++ N=1.5 
++ BV=5 
++ IBV=10u 
++ CJO=20p 
++ M=0.333 
++ EG=1.9
++ XTI=3
++)
+.ENDS LED_ROJO
